@@ -1,0 +1,8 @@
+#!/bin/sh /etc/rc.common
+
+START=100
+
+start() {
+	grep -vqE "^$|^#" /etc/idrcom.conf && /usr/bin/idrcom -b -d 30
+}
+
