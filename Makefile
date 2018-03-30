@@ -51,15 +51,11 @@ define Package/idrcom/install
 	$(INSTALL_CONF) files/idrcom.conf $(1)/etc/idrcom.conf
 endef
 
-define Package/idrcom/prerm
-	#!/bin/sh
-	killall -SIGINT idrcom >/dev/null 2>&1 || return 0
-endef
-
 define Package/idrcom/postrm
 	#!/bin/sh
 	rm -rf /tmp/idrcom.log
 	rm -rf /etc/rc.d/S100idrcom
+	rm -rf /etc/rc.d/K20idrcom
 endef
 
 $(eval $(call BuildPackage,idrcom))

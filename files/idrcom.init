@@ -1,8 +1,12 @@
 #!/bin/sh /etc/rc.common
 
 START=100
+STOP=20
 
 start() {
 	grep -vqE "^$|^#" /etc/idrcom.conf && /usr/bin/idrcom -b -d 30
 }
 
+stop() {
+	killall -SIGINT idrcom >/dev/null 2>&1 || return 0
+}
