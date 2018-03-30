@@ -1,5 +1,7 @@
 # idrcom
 
+[![GitHub release](https://img.shields.io/github/release/koho/idrcom.svg)](https://github.com/koho/idrcom/releases)
+
 ## 简介
 
 本项目是城市热点客户端在 OpenWrt／Linux／macOS 上的移植。
@@ -17,7 +19,7 @@
 
 ### OpenWrt
 
-下载适合路由器平台的安装包，已提供安装包的平台：ramips、ar71xx
+[下载](https://github.com/koho/idrcom/releases)适合路由器平台的安装包，已提供安装包的平台：ramips、ar71xx
 
    ```bash
    # 安装 pthread 依赖
