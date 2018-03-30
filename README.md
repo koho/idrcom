@@ -22,7 +22,7 @@
    ```bash
    # 安装 pthread 依赖
    opkg install libpthread
-   # 安装 idrcom，以 ramips 平台为例
+   # 安装 idrcom
    opkg install idrcom_1.0.0-1_ramips_24kec.ipk
    ```
 
@@ -32,7 +32,7 @@
 
    ```bash
    git clone https://github.com/koho/idrcom.git
-   cd src
+   cd idrcom/src
    make
    make install
    ```
@@ -97,7 +97,7 @@
 
 ## 编译
 
-下载目标平台的 [OpenWrt SDK](SDK)，配置[编译环境](DOC)
+下载目标平台的 [OpenWrt SDK](https://downloads.openwrt.org/)，配置[编译环境](https://openwrt.org/docs/guide-developer/obtain.firmware.sdk)
 
    ```bash
    # 以 ramips 平台为例
@@ -110,6 +110,3 @@
    # 复制到路由器
    scp bin/ramips/packages/base/idrcom_1.0.0-1_ramips_24kec.ipk root@192.168.1.1:/tmp
    ```
-
-  [SDK]: https://downloads.openwrt.org/
-  [DOC]: https://openwrt.org/docs/guide-developer/obtain.firmware.sdk
