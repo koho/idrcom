@@ -31,10 +31,6 @@ define Package/idrcom/description
 	idrcom is a lightweight stable Dr.COM client for embedded devices.
 endef
 
-define Package/idrcom/conffiles
-	/etc/idrcom.conf
-endef
-
 define Build/Prepare
 	mkdir -p $(PKG_BUILD_DIR)
 	$(CP) ./src/* $(PKG_BUILD_DIR)/
