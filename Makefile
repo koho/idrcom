@@ -32,7 +32,7 @@ define Package/idrcom/description
 endef
 
 define Package/idrcom/conffiles
-	/etc/drcom.conf
+	/etc/idrcom.conf
 endef
 
 define Build/Prepare
